@@ -791,6 +791,7 @@ module.exports = (env, argv) => {
 
             // Disable host check
             allowedHosts: "all",
+            port: 8081,
         },
     };
 };
