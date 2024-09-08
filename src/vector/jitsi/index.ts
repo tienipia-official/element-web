@@ -422,7 +422,7 @@ async function joinConference(audioInput?: string | null, videoInput?: string | 
         width: "100%",
         height: "100%",
         parentNode: document.querySelector("#jitsiContainer") ?? undefined,
-        roomName: conferenceId,
+        roomName: "vpaas-magic-cookie-1279585eeda64f3d99e41aac3fdd255e/" + conferenceId,
         devices: {
             audioInput,
             videoInput,
@@ -472,7 +472,7 @@ async function joinConference(audioInput?: string | null, videoInput?: string | 
         options.configOverwrite!.disableSelfViewSettings = true;
     }
 
-    meetApi = new JitsiMeetExternalAPI(jitsiDomain, options);
+    meetApi = new JitsiMeetExternalAPI("8x8.vc", options);
 
     // fires once when user joins the conference
     // (regardless of video on or off)
